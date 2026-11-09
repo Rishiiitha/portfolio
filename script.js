@@ -307,3 +307,35 @@ if (finePointer.matches) {
     }, { passive: true });
   });
 }
+
+const profileRequestForm = document.querySelector('#profile-request-form');
+if (profileRequestForm) {
+  const status = document.querySelector('#request-status');
+  const submitButton = profileRequestForm.querySelector('button[type="submit"]');
+  profileRequestForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    if (!profileRequestForm.reportValidity()) return;
+
+    submitButton.disabled = true;
+    status.textContent = 'SENDING REQUEST…';
+    const payload = Object.fromEntries(new FormData(profileRequestForm).entries());
+    const endpoint = profileRequestForm.action.replace('https://formsubmit.co/', 'https://formsubmit.co/ajax/');
+    try {
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      const result = await response.json();
+      if (!response.ok || result.success === false || result.success === 'false') {
+        throw new Error(result.message || 'Request could not be sent');
+      }
+      profileRequestForm.reset();
+      status.textContent = 'REQUEST SENT · THANK YOU. I’LL BE IN TOUCH.';
+    } catch {
+      status.textContent = 'COULDN’T SEND RIGHT NOW · PLEASE EMAIL ME DIRECTLY BELOW.';
+    } finally {
+      submitButton.disabled = false;
+    }
+  });
+}

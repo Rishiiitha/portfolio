@@ -22,7 +22,7 @@
       <nav id="main-nav" class="main-nav" aria-label="Main navigation">
         <a class="active" href="#home">Home</a><a href="#about">About</a><a href="#activity">Live activity</a><a href="#work">Selected work</a><a href="#experience">Experience</a>
       </nav>
-      <a class="header-cta" href="mailto:rishithavl15@gmail.com"><span>LET’S CONNECT</span><b>↗</b></a>
+      <a class="header-cta" href="#contact"><span>REQUEST PROFILE</span><b>↗</b></a>
     </header>
 
     <main>
@@ -31,7 +31,7 @@
           <div class="eyebrow"><i></i> COMPUTER SCIENCE UNDERGRADUATE <span>— COIMBATORE, IN</span></div>
           <h1>BUILD WITH<br /><em>INTENT.</em><br />SHIP WITH<br /><em>IMPACT.</em></h1>
           <p class="hero-sub">I’m Rishitha — a backend-focused engineer who loves turning complex systems into useful, dependable software.</p>
-          <div class="hero-actions"><a class="button button-bright" href="#work">EXPLORE MY WORK <span>↘</span></a><a class="text-link" href="assets/RishithaV_Resume.pdf" target="_blank" rel="noreferrer">VIEW RESUME <span>↗</span></a></div>
+          <div class="hero-actions"><a class="button button-bright" href="#work">EXPLORE MY WORK <span>↘</span></a><a class="text-link" href="#contact">REQUEST PROFILE <span>↗</span></a></div>
           <div class="hero-index"><span>01 / 04</span><span class="index-rule"></span><span>CURIOUS BY DEFAULT</span></div>
         </div>
         <div class="hero-art" aria-label="Portrait of Rishitha V">
@@ -125,7 +125,28 @@
 
       <section class="recognition section-pad"><div class="section-wrap recognition-inner"><div class="section-kicker"><span>05 / RECOGNITION</span><span class="kicker-line"></span><span>SMALL WINS, BIG MOTIVATION</span></div><div class="recognition-cards"><div class="recognition-card"><span>01</span><strong>NEUROHACK<br />FINALIST</strong><small>2026</small><b>↗</b></div><div class="recognition-card"><span>02</span><strong>OCI 2025<br />CERTIFIED</strong><small>ORACLE CLOUD INFRASTRUCTURE</small><b>↗</b></div><div class="recognition-card"><span>03</span><strong>ORACLE DATA<br />PLATFORM</strong><small>FOUNDATIONS ASSOCIATE · 2025</small><b>↗</b></div></div></div></section>
 
-      <section class="contact section-wrap section-pad" id="contact"><div class="contact-grid"><div><div class="section-kicker"><span>06 / YOUR MOVE</span><span class="kicker-line"></span><span>OPEN CHANNEL</span></div><h2>Let’s make<br />something <span>matter.</span></h2></div><div class="contact-copy"><p>Got a thoughtful problem, an interesting team, or an idea that deserves a real build? I’d love to hear about it.</p><a class="contact-email" href="mailto:rishithavl15@gmail.com">rishithavl15@gmail.com <b>↗</b></a><div class="social-links"><a href="https://github.com/Rishiiitha" target="_blank" rel="noreferrer">GITHUB ↗</a><a href="https://www.linkedin.com/in/rishitha-v-151206r" target="_blank" rel="noreferrer">LINKEDIN ↗</a><a href="https://leetcode.com/u/Rishitha-V/" target="_blank" rel="noreferrer">LEETCODE ↗</a></div></div></div></section>
+      <section class="contact section-wrap section-pad" id="contact">
+        <div class="contact-grid">
+          <div><div class="section-kicker"><span>06 / YOUR MOVE</span><span class="kicker-line"></span><span>PROFILE ACCESS</span></div><h2>Request my<br /><span>profile.</span></h2></div>
+          <div class="contact-copy">
+            <p>Looking for my resume or more details? Share your name, LinkedIn profile, and why you’d like to connect.</p>
+            <form class="profile-request-form" id="profile-request-form" action="https://formsubmit.co/rishithavl15@gmail.com" method="POST">
+              <input type="hidden" name="_subject" value="Portfolio profile request" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_url" value="https://rishiiitha.vercel.app/" />
+              <div class="request-trap" aria-hidden="true"><label for="request-company">Leave this field empty</label><input id="request-company" name="_honey" tabindex="-1" autocomplete="off" /></div>
+              <div class="request-field"><label for="request-name">YOUR NAME</label><input id="request-name" name="name" type="text" autocomplete="name" maxlength="100" placeholder="Name" required /></div>
+              <div class="request-field"><label for="request-linkedin">LINKEDIN PROFILE</label><input id="request-linkedin" name="linkedin" type="url" inputmode="url" maxlength="220" placeholder="https://linkedin.com/in/…" pattern="https?://([a-zA-Z0-9-]+\.)?linkedin\.com/in/.+" title="Enter your LinkedIn profile URL" required /></div>
+              <div class="request-field request-field--wide"><label for="request-reason">WHY ARE YOU REQUESTING MY PROFILE?</label><textarea id="request-reason" name="reason" rows="4" maxlength="1000" placeholder="A little context helps me respond…" required></textarea></div>
+              <button class="button button-bright request-submit" type="submit"><span>SUBMIT REQUEST</span><b>↗</b></button>
+              <p class="request-status" id="request-status" aria-live="polite" role="status"></p>
+            </form>
+            <p class="request-privacy">Your details will be sent to me through FormSubmit. Their service may retain submissions for up to 30 days.</p>
+            <a class="contact-email" href="mailto:rishithavl15@gmail.com">Or email me directly <b>↗</b></a>
+            <div class="social-links"><a href="https://github.com/Rishiiitha" target="_blank" rel="noreferrer">GITHUB ↗</a><a href="https://www.linkedin.com/in/rishitha-v-151206r" target="_blank" rel="noreferrer">LINKEDIN ↗</a><a href="https://leetcode.com/u/Rishitha-V/" target="_blank" rel="noreferrer">LEETCODE ↗</a></div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="site-footer section-wrap"><a class="footer-mark" href="#home">R<span>.</span></a><span>BUILT WITH INTENT BY RISHITHA V</span><span>© 2026 — ALWAYS ITERATING</span><a href="#home">BACK TO TOP ↑</a></footer>
     <script src="script.js"></script>
