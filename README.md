@@ -2,7 +2,7 @@
 
 A responsive, static portfolio built with HTML, CSS, and JavaScript.
 
-The page includes a real portrait from `assets/`, LeetCode solve and contest stats, a GitHub contribution heatmap and public activity feed, and scroll reveal transitions. Live profile panels use public data and fall back to cached values when available. The profile request form collects a name, LinkedIn URL, and reason, then emails the request to the site owner via FormSubmit.
+The page includes a real portrait from `assets/`, LeetCode solve and contest stats, a GitHub contribution heatmap and public activity feed, and scroll reveal transitions. Live profile panels use public data and fall back to cached values when available. The resume request form collects a name, LinkedIn URL, and reason, then emails the request to the site owner via FormSubmit.
 
 ## Run locally
 
